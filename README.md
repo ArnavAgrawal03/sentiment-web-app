@@ -34,9 +34,14 @@ In python: we can write a function that, given a sentence, returns the sentiment
 
 Note: In the implementation, I've wrapped the score in a pydantic object. You could also just return a dictionary, but FastAPI has some nice features (like automatic data validation and json conversion) for pydantic objects - we will be using pydantic (and typing!) in our actual project as well.
 
+## Frontend - Svelte
+
+The advantage of using svelte is that the templates are great and ChatGPT becomes a really useful resource. To start a svelte project, run <code>npx degit sveltejs/template [svelte project name]</code>. 
+
+
 ## Run
 1. To run the backend, simply run <code>uvicorn main:app --reload</code>. 
-2. In a separate terminal, run <code>npm run dev</code>. This will start the frontend server.
+2. In a separate terminal, <code>cd</code> to <code>svelte-sentiment-app</code>. Run <code>npm run dev</code>. This will start the frontend server.
 
 Note that we call <code>main:app</code> in the command above because we called the FastAPI instance <code>app</code> in <code>main.py</code>. The colon kind of works similar to an import statement (this would be analogous to <code>from main import app</code> in python). If you change the name of the FastAPI instance, you'll have to change the command above. 
 
