@@ -36,11 +36,11 @@ Note: In the implementation, I've wrapped the score in a pydantic object. You co
 
 ## Frontend - Svelte
 
-The advantage of using svelte is that the templates are great and ChatGPT becomes a really useful resource. To start a svelte project, run <code>npx degit sveltejs/template [svelte project name]</code>. 
+The advantage of using svelte is that the templates are great and ChatGPT becomes a really useful resource. To start a svelte project, run <code>npx degit sveltejs/template [svelte project name]</code>. Correctly prompting ChatGPT will give you most of the code you can see inside the svelte-sentiment-app directory. I won't pretend to be an expert on it - I have very limited frontend experience but for 5 minutes of work, the website doesn't look bad.
 
 
 ## Run
-1. To run the backend, simply run <code>uvicorn main:app --reload</code>. 
+1. To run the backend, run <code>uvicorn main:app --reload</code>. 
 2. In a separate terminal, <code>cd</code> to <code>svelte-sentiment-app</code>. Run <code>npm run dev</code>. This will start the frontend server.
 
 Note that we call <code>main:app</code> in the command above because we called the FastAPI instance <code>app</code> in <code>main.py</code>. The colon kind of works similar to an import statement (this would be analogous to <code>from main import app</code> in python). If you change the name of the FastAPI instance, you'll have to change the command above. 
