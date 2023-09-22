@@ -2,4 +2,7 @@ venv
 venv/
 .venv
 ./venv
+svelte-sentiment-app/node_modules/
+svelte-sentiment-app/public/build/
+
 .DS_Store
