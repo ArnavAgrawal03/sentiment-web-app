@@ -4,5 +4,5 @@ venv/
 ./venv
 svelte-sentiment-app/node_modules/
 svelte-sentiment-app/public/build/
-
+__pycache__/
 .DS_Store
