@@ -28,7 +28,7 @@ class Score(BaseModel):
 
 
 # this works for a single word, but we want to be able to pass in a sentence
-@app.get("/sentiment/q?={sentence}")
+@app.get("/sentiment/{sentence}")
 def route_query(sentence: str) -> Score:
     result = sentiment.getSentiment(sentence)
     return Score(

@@ -18,7 +18,7 @@ Setup a python virtual environment and install the requirements:
 
 Note: At this point, everyone must be comfortable with python, pip, and venv. If you're not, just search it up online. We'll be using python 3.11, but any version of python 3 should work. 
 
-Make sure you have svelte installed. It's pretty simple to install, just follow the instructions [here](https://svelte.dev/blog/svelte-for-new-developers).
+Make sure you have svelte installed. It's pretty simple to install, just follow the instructions [here](https://svelte.dev/blog/svelte-for-new-developers). Now, cd to <code>svelte-sentiment-app</code> and run <code>npm install</code>. This will install all the dependencies for the frontend.
 
 
 ## Model - sentiment analysis

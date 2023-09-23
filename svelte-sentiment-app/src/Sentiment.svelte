@@ -10,9 +10,7 @@
 
   async function analyzeSentiment() {
     try {
-      const response = await fetch(
-        `http://127.0.0.1:8000/sentiment/q?=${encodeURIComponent(text)}`
-      );
+      const response = await fetch(`http://127.0.0.1:8000/sentiment/${encodeURIComponent(text)}`);
       const data = await response.json();
       scores = data;
     } catch (error) {
