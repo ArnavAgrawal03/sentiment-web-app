@@ -12,10 +12,9 @@ We'll build a simple website that takes in some text and returns whether that te
 ## Setup
 Setup a python virtual environment and install the requirements:
 
-<code>python3 -m venv venv</code>
-<code>source venv/bin/activate</code>
-<code>pip install -r requirements.txt</code>
-
+- <code>python3 -m venv venv</code>
+- <code>source venv/bin/activate</code>
+- <code>pip install -r requirements.txt</code>
 
 Note: At this point, everyone must be comfortable with python, pip, and venv. If you're not, just search it up online. We'll be using python 3.11, but any version of python 3 should work. 
 
